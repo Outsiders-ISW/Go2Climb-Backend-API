@@ -10,7 +10,8 @@ using NUnit.Framework;
 using SpecFlow.Internal.Json;
 using TechTalk.SpecFlow.Assist;
 
-namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
+namespace Go2Climb.API.Specflow.AcceptanceTests.Steps
+{
 
     [Binding]
     public class AddOfferToServiceStepsDefinition
@@ -30,7 +31,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
 
 
         [Given(@"The Endpoint https://localhost:(.*)/api/v(.*)/services/(.*) is available")]
-        public void GivenTheEndpointHttpsLocalhostApiVServicesIsAvailable(int port, int version,int id)
+        public void GivenTheEndpointHttpsLocalhostApiVServicesIsAvailable(int port, int version, int id)
         {
             BaseUri = new Uri($"https://localhost:{port}/api/v{version}/services/{id}");
             Client = _factory.CreateClient(new WebApplicationFactoryClientOptions {BaseAddress = BaseUri});
@@ -77,3 +78,4 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             Assert.AreEqual(actualStatusCode, actualStatusCode);
         }
     }
+}

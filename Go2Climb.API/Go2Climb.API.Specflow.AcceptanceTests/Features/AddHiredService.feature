@@ -15,5 +15,5 @@ As an agency I want to have control of the status of the service offered to my c
     Scenario: Add new hired service to the agency
         When A HiredService Request is Sent
           | CustomerId | ServiceId | Amount | Price | ScheduledDate | Status  |
-          | 1          | 1         | 1000   | 500   | 05-05-2022    | pending |
+          | 1          | 7         | 1000   | 500   | 05-05-2022    | pending |
         Then A Response With Status 200 is received

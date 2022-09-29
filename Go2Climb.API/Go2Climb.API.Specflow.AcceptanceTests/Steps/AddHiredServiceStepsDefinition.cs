@@ -9,7 +9,8 @@ using NUnit.Framework;
 using SpecFlow.Internal.Json;
 using TechTalk.SpecFlow.Assist;
 
-namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
+namespace Go2Climb.API.Specflow.AcceptanceTests.Steps
+{
 
     [Binding]
     public class AddHiredServiceStepsDefinition
@@ -45,7 +46,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             var existingService = JsonConvert.DeserializeObject<ServiceResource>(serviceResponseData);
             Service = existingService;
         }
-        
+
         [Given(@"A Customer hired that service")]
         public async void GivenACustomerHiredThatService(Table existingCustomerResource)
         {
@@ -65,7 +66,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
             Response = Client.PostAsync(BaseUri, content);
         }
-        
+
         [Then(@"A Response With Status (.*) is received")]
         public void ThenAResponseWithStatusIsReceived(int expectedStatus)
         {
@@ -74,3 +75,4 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             Assert.AreEqual(actualStatusCode, actualStatusCode);
         }
     }
+}

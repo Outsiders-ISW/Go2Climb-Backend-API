@@ -9,7 +9,8 @@ using NUnit.Framework;
 using SpecFlow.Internal.Json;
 using TechTalk.SpecFlow.Assist;
 
-namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
+namespace Go2Climb.API.Specflow.AcceptanceTests.Steps
+{
 
     [Binding]
     public class AddAgencyReviewStepsDefinition
@@ -45,7 +46,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             var existingInterest = JsonConvert.DeserializeObject<AgencyResource>(interestResponseData);
             Agency = existingInterest;
         }
-        
+
         [Given(@"A Customer already hire a service")]
         public async void GivenACustomerAlreadyHireAService(Table existingCustomerResource)
         {
@@ -74,3 +75,4 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             Assert.AreEqual(actualStatusCode, actualStatusCode);
         }
     }
+}

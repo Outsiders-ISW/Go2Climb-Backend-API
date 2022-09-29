@@ -9,7 +9,8 @@ using NUnit.Framework;
 using SpecFlow.Internal.Json;
 using TechTalk.SpecFlow.Assist;
 
-namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
+namespace Go2Climb.API.Specflow.AcceptanceTests.Steps
+{
 
     [Binding]
     public class AddServiceToAgencyStepsDefinition
@@ -24,14 +25,14 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
         {
             _factory = factory;
         }
-        
+
         [Given(@"the Endpoint https://localhost:(.*)/api/v(.*)/services is available")]
         public void GivenTheEndpointHttpsLocalhostApiVServicesIsAvailable(int port, int version)
         {
             BaseUri = new Uri($"https://localhost:{port}/api/v{version}/services");
             Client = _factory.CreateClient(new WebApplicationFactoryClientOptions {BaseAddress = BaseUri});
         }
-        
+
         [Given(@"A Agency Is Already Stored")]
         public async void GivenAAgencyIsAlreadyStored(Table existingAgencyResource)
         {
@@ -51,7 +52,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
             Response = Client.PostAsync(BaseUri, content);
         }
-        
+
         [Then(@"A Response with status (.*) is Received")]
         public void ThenAResponseWithStatusIsReceived(int expectedStatus)
         {
@@ -60,3 +61,4 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             Assert.AreEqual(actualStatusCode, actualStatusCode);
         }
     }
+}
