@@ -34,4 +34,41 @@
       <SpecFlowFeatureFiles Remove="Features\AddAgency.feature" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Steps" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Features\AddAgencyReview.feature.cs">
+        <DependentUpon>AddAgencyReview.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
+      </Compile>
+      <Compile Update="Features\AddHiredService.feature.cs">
+        <DependentUpon>AddHiredService.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
+      </Compile>
+      <Compile Update="Features\AddOfferToService.feature.cs">
+        <DependentUpon>AddOfferToService.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
+      </Compile>
+      <Compile Update="Features\AddScoreService.feature.cs">
+        <DependentUpon>AddScoreService.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
+      </Compile>
+      <Compile Update="Features\AddServiceToAgency.feature.cs">
+        <DependentUpon>AddServiceToAgency.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
+      </Compile>
+    </ItemGroup>
+
 </Project>
