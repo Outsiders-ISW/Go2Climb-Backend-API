@@ -10,10 +10,9 @@ using NUnit.Framework;
 using SpecFlow.Internal.Json;
 using TechTalk.SpecFlow.Assist;
 
-namespace Go2Climb.API.Specflow.AcceptanceTests.Steps
-{
+namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
 
-    [Binding]
+[Binding]
     public sealed class AddScoreServiceStepsDefinition
     {
         private readonly WebApplicationFactory<Startup> _factory;
@@ -83,4 +82,3 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps
             Assert.AreEqual(actualStatusCode, actualStatusCode);
         }
     }
-}
