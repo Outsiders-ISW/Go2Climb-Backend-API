@@ -2,9 +2,9 @@ name: .NET
 
 on:
   push:
-    branches: [ "main", "feat-go2climb-tests" ]
+    branches: [ "main", "feat-go2climb-tests", "feat-hired-service-tests", "feat-offer-service-tests", "feat-score-service-tests", "feat-service-sgency-tests" ]
   pull_request:
-    branches: [ "main", "feat-go2climb-tests" ]
+    branches: [ "main", "feat-go2climb-tests", "feat-hired-service-tests", "feat-offer-service-tests", "feat-score-service-tests", "feat-service-sgency-tests" ]
 
 jobs:
   build:
