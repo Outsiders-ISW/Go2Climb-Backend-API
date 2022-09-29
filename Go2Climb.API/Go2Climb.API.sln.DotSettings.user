@@ -3,5 +3,6 @@
   &lt;Or&gt;&#xD;
     &lt;Project Location="D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.NUnit.Test" Presentation="&amp;lt;Go2Climb.API.NUnit.Test&amp;gt;" /&gt;&#xD;
     &lt;Project Location="D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests" Presentation="&amp;lt;Go2Climb.API.Specflow.AcceptanceTests&amp;gt;" /&gt;&#xD;
+    &lt;Project Location="D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Tests" Presentation="&amp;lt;Go2Climb.API.Tests&amp;gt;" /&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
