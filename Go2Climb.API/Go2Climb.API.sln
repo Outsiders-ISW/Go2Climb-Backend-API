@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Go2Climb.API.Tests", "Go2Cl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Go2Climb.API.NUnit.Test", "Go2Climb.API.NUnit.Test\Go2Climb.API.NUnit.Test.csproj", "{4F2AC780-DFCB-4858-A036-B3857A2B3CD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Go2Climb.API.Specflow", "Go2Climb.API.Specflow\Go2Climb.API.Specflow.csproj", "{09547D7F-22FD-43D8-AF0A-D495B7D4A31F}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Go2Climb.API.Specflow.AcceptanceTests", "Go2Climb.API.Specflow.AcceptanceTests\Go2Climb.API.Specflow.AcceptanceTests.csproj", "{B87EE655-A513-466D-A032-B96670FFA2EE}"
 EndProject
 Global
@@ -26,6 +28,10 @@ Global
 		{4F2AC780-DFCB-4858-A036-B3857A2B3CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F2AC780-DFCB-4858-A036-B3857A2B3CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F2AC780-DFCB-4858-A036-B3857A2B3CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09547D7F-22FD-43D8-AF0A-D495B7D4A31F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09547D7F-22FD-43D8-AF0A-D495B7D4A31F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09547D7F-22FD-43D8-AF0A-D495B7D4A31F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09547D7F-22FD-43D8-AF0A-D495B7D4A31F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B87EE655-A513-466D-A032-B96670FFA2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B87EE655-A513-466D-A032-B96670FFA2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B87EE655-A513-466D-A032-B96670FFA2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
