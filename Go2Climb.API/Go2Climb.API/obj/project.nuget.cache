@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sdRM7cR/R0ZSsRy92hAvpXG66uSWJ5cjm91s/SL9UR59bY+p3QT1G4CqtE2p4wsoAjwP6Qp11bybTaOujUACAQ==",
+  "dgSpecHash": "XRmqdVPivzkYda7WokixacrZ6xHdhtNir9oLAXAHS0N8quEnBmWZP59pt92E+2npQ1m4sXrEavYsTGtY4Zex8A==",
   "success": true,
-  "projectFilePath": "D:\\UPC\\2022_2\\APLICACIONES_PARA_DISPOSITIVOS_MOVILES_WS62\\TF\\Repositorios\\Backend\\Go2Climb.API\\Go2Climb.API\\Go2Climb.API.csproj",
+  "projectFilePath": "D:\\UPC\\2022_2\\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\\TF\\Repos\\Backend-API\\Go2Climb.API\\Go2Climb.API\\Go2Climb.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
