@@ -19,25 +19,20 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class AddAgencyReviewFeature : object, Xunit.IClassFixture<AddAgencyReviewFeature.FixtureData>, System.IDisposable
+    [NUnit.Framework.TestFixtureAttribute()]
+    [NUnit.Framework.DescriptionAttribute("AddAgencyReview")]
+    public partial class AddAgencyReviewFeature
     {
         
-        private static TechTalk.SpecFlow.ITestRunner testRunner;
+        private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
-        
-        private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
 #line 1 "AddAgencyReview.feature"
 #line hidden
         
-        public AddAgencyReviewFeature(AddAgencyReviewFeature.FixtureData fixtureData, Go2Climb_API_Specflow_AcceptanceTests_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
-        {
-            this._testOutputHelper = testOutputHelper;
-            this.TestInitialize();
-        }
-        
-        public static void FeatureSetup()
+        [NUnit.Framework.OneTimeSetUpAttribute()]
+        public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "AddAgencyReview", "As a tourist I want to rate the service I hired to show my opinion so that more u" +
@@ -45,16 +40,19 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Features
             testRunner.OnFeatureStart(featureInfo);
         }
         
-        public static void FeatureTearDown()
+        [NUnit.Framework.OneTimeTearDownAttribute()]
+        public virtual void FeatureTearDown()
         {
             testRunner.OnFeatureEnd();
             testRunner = null;
         }
         
+        [NUnit.Framework.SetUpAttribute()]
         public virtual void TestInitialize()
         {
         }
         
+        [NUnit.Framework.TearDownAttribute()]
         public virtual void TestTearDown()
         {
             testRunner.OnScenarioEnd();
@@ -63,7 +61,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Features
         public virtual void ScenarioInitialize(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioInitialize(scenarioInfo);
-            testRunner.ScenarioContext.ScenarioContainer.RegisterInstanceAs<Xunit.Abstractions.ITestOutputHelper>(_testOutputHelper);
+            testRunner.ScenarioContext.ScenarioContainer.RegisterInstanceAs<NUnit.Framework.TestContext>(NUnit.Framework.TestContext.CurrentContext);
         }
         
         public virtual void ScenarioStart()
@@ -127,15 +125,9 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Features
 #line hidden
         }
         
-        void System.IDisposable.Dispose()
-        {
-            this.TestTearDown();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="Add new review to the agency")]
-        [Xunit.TraitAttribute("FeatureTitle", "AddAgencyReview")]
-        [Xunit.TraitAttribute("Description", "Add new review to the agency")]
-        [Xunit.TraitAttribute("Category", "service-adding")]
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add new review to the agency")]
+        [NUnit.Framework.CategoryAttribute("service-adding")]
         public virtual void AddNewReviewToTheAgency()
         {
             string[] tagsOfScenario = new string[] {
@@ -191,22 +183,6 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Features
 #line hidden
             }
             this.ScenarioCleanup();
-        }
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
-        [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        public class FixtureData : System.IDisposable
-        {
-            
-            public FixtureData()
-            {
-                AddAgencyReviewFeature.FeatureSetup();
-            }
-            
-            void System.IDisposable.Dispose()
-            {
-                AddAgencyReviewFeature.FeatureTearDown();
-            }
         }
     }
 }

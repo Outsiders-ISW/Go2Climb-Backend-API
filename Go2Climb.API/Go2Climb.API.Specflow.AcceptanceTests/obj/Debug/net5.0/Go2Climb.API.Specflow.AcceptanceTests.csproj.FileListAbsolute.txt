@@ -1,7 +1,7 @@
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\CoverletSourceRootsMapping
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Go2Climb.API.deps.json
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\LivingDoc.Dtos.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\LivingDoc.SpecFlowPlugin.dll
+D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Go2Climb.API.runtimeconfig.json
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Go2Climb.API.runtimeconfig.dev.json
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Go2Climb.API.StaticWebAssets.xml
@@ -11,10 +11,12 @@ D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\testhost.exe
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\testhost.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\xunit.runner.reporters.netcoreapp10.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\xunit.runner.utility.netcoreapp10.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\TechTalk.SpecFlow.xUnit.SpecFlowPlugin.dll
+D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\NUnit3.TestAdapter.dll
+D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\NUnit3.TestAdapter.pdb
+D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\nunit.engine.dll
+D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\nunit.engine.api.dll
+D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\nunit.engine.core.dll
+D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\testcentric.engine.metadata.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Go2Climb.API.Specflow.AcceptanceTests.deps.json
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Go2Climb.API.Specflow.AcceptanceTests.runtimeconfig.json
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Go2Climb.API.Specflow.AcceptanceTests.runtimeconfig.dev.json
@@ -341,6 +343,7 @@ D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\MySql.EntityFrameworkCore.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\NuGet.Frameworks.dll
+D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\nunit.framework.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\TechTalk.SpecFlow.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\SpecFlow.Internal.Json.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Swashbuckle.AspNetCore.Annotations.dll
@@ -352,12 +355,6 @@ D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\System.IO.Pipelines.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Validation.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\xunit.abstractions.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\xunit.assert.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\xunit.core.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\xunit.execution.dotnet.dll
-D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\Xunit.SkippableFact.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 D:\UPC\2022_2\DISEÑO DE EXPERIMENTOS DE INGENIERÍA DE SOFTWARE - WV71\TF\Repos\Backend-API\Go2Climb.API\Go2Climb.API.Specflow.AcceptanceTests\bin\Debug\net5.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll

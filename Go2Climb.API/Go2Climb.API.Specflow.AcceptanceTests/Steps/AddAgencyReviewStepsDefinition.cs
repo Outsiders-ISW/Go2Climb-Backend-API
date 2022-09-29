@@ -1,23 +1,16 @@
-﻿using System;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Net;
 using System.Net.Mime;
 using System.Text;
-using System.Threading.Tasks;
-using Go2Climb.API;
 using Go2Climb.API.Agencies.Resources;
-using Go2Climb.API.Domain.Services.Communication;
 using Go2Climb.API.Resources;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Newtonsoft.Json;
+using NUnit.Framework;
 using SpecFlow.Internal.Json;
-using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
-using Xunit;
 
-namespace Go2Climb.API.Specflow.AcceptanceTests.Steps
-{
+namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
+
     [Binding]
     public class AddAgencyReviewStepsDefinition
     {
@@ -78,7 +71,6 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps
         {
             var expectedStatusCode = ((HttpStatusCode) expectedStatus).ToString();
             var actualStatusCode = Response.Result.StatusCode.ToString();
-            Assert.Equal(actualStatusCode, actualStatusCode);
+            Assert.AreEqual(actualStatusCode, actualStatusCode);
         }
     }
-}
