@@ -2,9 +2,9 @@ name: .NET
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "feat-go2climb-tests" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "main", "feat-go2climb-tests" ]
 
 jobs:
   build:
