@@ -12,7 +12,7 @@ namespace Go2Climb.API.Activities.Controllers
 {
     [Produces("application/json")]
     [ApiController]
-    [Route("/api/v1/[controller]")]
+    [Route("/api/v2/[controller]")]
     public class ActivitiesController : ControllerBase
     {
         private readonly IActivityService _activityService;
