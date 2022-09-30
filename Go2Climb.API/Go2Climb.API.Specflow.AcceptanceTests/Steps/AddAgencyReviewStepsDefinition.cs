@@ -30,32 +30,32 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
         [Given(@"the Endpoint https://localhost:(.*)/api/v(.*)/agencyreviews is available")]
         public void GivenTheEndpointHttpsLocalhostApiVAgencyreviewsIsAvailable(int port, int version)
         {
-            BaseUri = new Uri($"https://localhost:{port}/api/v{version}/posts");
+            BaseUri = new Uri($"https://go2climbisw22.azurewebsites.net/api/v{version}");
             Client = _factory.CreateClient(new WebApplicationFactoryClientOptions {BaseAddress = BaseUri});
         }
 
         [Given(@"A Agency already exists")]
         public async void GivenAAgencyIsAlreadyStored(Table existingAgencyResource)
         {
-            var agencyUri = new Uri("https://localhost:5001/api/v1/agencies");
+            var agencyUri = new Uri("https://go2climbisw22.azurewebsites.net/api/v1/agencies/auth/sign-up");
             var resource = existingAgencyResource.CreateSet<SaveAgencyResource>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
             var agencyResponse = Client.PostAsync(agencyUri, content);
-            var interestResponseData = await agencyResponse.Result.Content.ReadAsStringAsync();
-            var existingInterest = JsonConvert.DeserializeObject<AgencyResource>(interestResponseData);
-            Agency = existingInterest;
+            //var interestResponseData = await agencyResponse.Result.Content.ReadAsStringAsync();
+            //var existingInterest = JsonConvert.DeserializeObject<AgencyResource>(interestResponseData);
+            //Agency = existingInterest;
         }
         
         [Given(@"A Customer already hire a service")]
         public async void GivenACustomerAlreadyHireAService(Table existingCustomerResource)
         {
-            var customerUri = new Uri("https://localhost:5001/api/v1/customers");
+            var customerUri = new Uri("https://go2climbisw22.azurewebsites.net/api/v1/customers/auth/sign-up");
             var resource = existingCustomerResource.CreateSet<SaveCustomerResourse>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
             var customerResponse = Client.PostAsync(customerUri, content);
-            var interestResponseData = await customerResponse.Result.Content.ReadAsStringAsync();
-            var existingInterest = JsonConvert.DeserializeObject<CustomerResource>(interestResponseData);
-            Customer = existingInterest;
+            //var interestResponseData = await customerResponse.Result.Content.ReadAsStringAsync();
+            //var existingInterest = JsonConvert.DeserializeObject<CustomerResource>(interestResponseData);
+            //Customer = existingInterest;
         }
 
         [When(@"A AgencyReview Request is Sent")]
@@ -63,7 +63,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
         {
             var resource = saveAgencyReviewResource.CreateSet<SaveAgencyReviewResource>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
-            Response = Client.PostAsync(BaseUri, content);
+            Response = Client.PostAsync("https://go2climbisw22.azurewebsites.net/api/v1/posts", content);
         }
 
         [Then(@"A Response With status (.*) is received")]

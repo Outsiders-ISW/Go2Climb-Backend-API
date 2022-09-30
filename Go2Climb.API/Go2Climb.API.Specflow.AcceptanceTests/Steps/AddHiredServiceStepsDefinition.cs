@@ -46,7 +46,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
         [Given(@"A Customer hired that service")]
         public async void GivenACustomerHiredThatService(Table existingCustomerResource)
         {
-            var customerUri = new Uri("https://go2climbisw22.azurewebsites.net/api/v1/customers");
+            var customerUri = new Uri("https://go2climbisw22.azurewebsites.net/api/v1/customers/auth/sign-up");
             var resource = existingCustomerResource.CreateSet<SaveCustomerResourse>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
             var customerResponse = Client.PostAsync(customerUri, content);
