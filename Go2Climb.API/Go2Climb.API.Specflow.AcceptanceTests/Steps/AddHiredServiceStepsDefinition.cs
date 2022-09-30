@@ -30,14 +30,14 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
         [Given(@"the Endpoint https://localhost:(.*)/api/v(.*) is available")]
         public void GivenTheEndpointHttpsLocalhostApiVHiredServiceIsAvailable(int port, int version)
         {
-            BaseUri = new Uri($"https://go2climbisw22.azurewebsites.net/api/v{version}");
+            BaseUri = new Uri($"https://localhost:{port}/api/v{version}");
             Client = _factory.CreateClient(new WebApplicationFactoryClientOptions {BaseAddress = BaseUri});
         }
 
         [Given(@"A Service already exists")]
         public async void GivenAServiceAlreadyExists(Table existingServiceResource)
         {
-            var serviceUri = new Uri("https://go2climbisw22.azurewebsites.net/api/v1/services");
+            var serviceUri = new Uri("https://localhost:5001/api/v1/services");
             var resource = existingServiceResource.CreateSet<SaveServiceResource>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
             var serviceResponse = Client.PostAsync(serviceUri, content);
@@ -46,7 +46,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
         [Given(@"A Customer hired that service")]
         public async void GivenACustomerHiredThatService(Table existingCustomerResource)
         {
-            var customerUri = new Uri("https://go2climbisw22.azurewebsites.net/api/v1/customers");
+            var customerUri = new Uri("https://localhost:5001/api/v1/customers");
             var resource = existingCustomerResource.CreateSet<SaveCustomerResourse>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
             var customerResponse = Client.PostAsync(customerUri, content);
@@ -60,7 +60,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
         {
             var resource = saveHiredServiceResource.CreateSet<SaveHiredServiceResource>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
-            Response = Client.PostAsync("https://go2climbisw22.azurewebsites.net/api/v1/hiredservice", content);
+            Response = Client.PostAsync("https://localhost:5001/api/v1/hiredservice", content);
         }
         
         [Then(@"A Response With Status (.*) is received")]
