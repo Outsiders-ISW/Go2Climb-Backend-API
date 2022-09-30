@@ -2,7 +2,7 @@
 As an agency I want to have control of the status of the service offered to my clients to indicate when a service has been satisfactorily completed.
 
     Background: 
-        Given the Endpoint https://localhost:5001/api/v1/hiredservice is available
+        Given the Endpoint https://localhost:5001/api/v1 is available
         And A Service already exists
           | Name        | Price | Location | CreationDate | Description                         | AgencyId |
           | New Service | 500   | Ancash   | 06-11-2021   | This is a new service for my agency | 1        |

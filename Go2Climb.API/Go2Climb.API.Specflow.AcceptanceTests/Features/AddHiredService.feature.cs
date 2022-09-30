@@ -79,7 +79,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Features
 #line 4
     #line hidden
 #line 5
-        testRunner.Given("the Endpoint https://localhost:5001/api/v1/hiredservice is available", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+        testRunner.Given("the Endpoint https://localhost:5001/api/v1 is available", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                         "Name",

@@ -27,7 +27,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             _factory = factory;
         }
 
-        [Given(@"the Endpoint https://localhost:(.*)/api/v(.*)/hiredservice is available")]
+        [Given(@"the Endpoint https://localhost:(.*)/api/v(.*) is available")]
         public void GivenTheEndpointHttpsLocalhostApiVHiredServiceIsAvailable(int port, int version)
         {
             BaseUri = new Uri($"https://localhost:{port}/api/v{version}");
@@ -41,9 +41,6 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             var resource = existingServiceResource.CreateSet<SaveServiceResource>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
             var serviceResponse = Client.PostAsync(serviceUri, content);
-            var serviceResponseData = await serviceResponse.Result.Content.ReadAsStringAsync();
-            var existingService = JsonConvert.DeserializeObject<ServiceResource>(serviceResponseData);
-            Service = existingService;
         }
         
         [Given(@"A Customer hired that service")]
@@ -63,7 +60,7 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
         {
             var resource = saveHiredServiceResource.CreateSet<SaveHiredServiceResource>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
-            Response = Client.PostAsync(BaseUri, content);
+            Response = Client.PostAsync("https://localhost:5001/api/v1/hiredservice", content);
         }
         
         [Then(@"A Response With Status (.*) is received")]
