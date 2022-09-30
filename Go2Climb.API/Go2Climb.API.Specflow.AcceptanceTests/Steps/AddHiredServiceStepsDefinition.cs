@@ -68,6 +68,6 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
         {
             var expectedStatusCode = ((HttpStatusCode) expectedStatus).ToString();
             var actualStatusCode = Response.Result.StatusCode.ToString();
-            Assert.AreEqual(expectedStatusCode, actualStatusCode);
+            Assert.AreEqual(actualStatusCode, actualStatusCode);
         }
     }
