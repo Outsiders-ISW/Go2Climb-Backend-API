@@ -55,10 +55,6 @@ namespace Go2Climb.API.Specflow.AcceptanceTests.Steps;
             var resource = existingServiceResource.CreateSet<SaveServiceResource>().First();
             var content = new StringContent(resource.ToJson(), Encoding.UTF8, MediaTypeNames.Application.Json);
             var serviceResponse = Client.PostAsync(serviceUri, content);
-            var serviceResponseData = await serviceResponse.Result.Content.ReadAsStringAsync();
-            var existingService = JsonConvert.DeserializeObject<ServiceResource>(serviceResponseData);
-            Service = existingService;
-
         }
 
         [When(@"A Service Request is Sent with complete information for a upgrade of price")]
