@@ -32,7 +32,7 @@ namespace Go2Climb.API.Services
             if (existingService.Result == null)
                 return new ServiceResponse("The service does not exist.");
             
-            return new ServiceResponse(existingService.Result);
+            return new ServiceResponse(existingService.Result); 
         }
 
         public async Task<IEnumerable<Service>> ListByText(string name, int start, int limit)
