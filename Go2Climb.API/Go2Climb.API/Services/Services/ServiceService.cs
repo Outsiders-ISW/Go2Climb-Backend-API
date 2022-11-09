@@ -105,6 +105,7 @@ namespace Go2Climb.API.Services
             existingService.Location = service.Location;
             existingService.Description = service.Description;
             existingService.CreationDate = service.CreationDate;
+            existingService.Video = service.Video;
             try
             {
                 _serviceRepository.Update(existingService);

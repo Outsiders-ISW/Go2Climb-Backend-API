@@ -23,6 +23,8 @@ namespace Go2Climb.API.Resources
         
         public string Photos { get; set; }
         
+        public string Video { get; set; }
+        
         [Required]
         [MaxLength(150)]
         public string Description { get; set; }
