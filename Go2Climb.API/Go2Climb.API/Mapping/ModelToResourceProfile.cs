@@ -3,6 +3,8 @@ using Go2Climb.API.Agencies.Domain.Models;
 using Go2Climb.API.Agencies.Resources;
 using Go2Climb.API.Domain.Models;
 using Go2Climb.API.Domain.Services.Communication;
+using Go2Climb.API.Reports.Domain.Models;
+using Go2Climb.API.Reports.Resources;
 using Go2Climb.API.Resources;
 using Go2Climb.API.Security.Domain.Services.Communication;
 using Go2Climb.API.Services.Resources;
@@ -24,6 +26,7 @@ namespace Go2Climb.API.Mapping
             CreateMap<HiredService, HiredServiceResource>();
             CreateMap<AgencyReview, AgencyReviewResource>();
             CreateMap<ServiceReview, ServiceReviewResource>();
+            CreateMap<Report, ReportResource>();
             CreateMap<Subscription, SubscriptionResource>();
             
             CreateMap<AuthenticateResponse, AuthenticateAgencyResponse>();
