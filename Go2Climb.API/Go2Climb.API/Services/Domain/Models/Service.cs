@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Go2Climb.API.Agencies.Domain.Models;
+using Go2Climb.API.Reports.Domain.Models;
 
 namespace Go2Climb.API.Domain.Models
 {
@@ -20,6 +21,7 @@ namespace Go2Climb.API.Domain.Models
         // Relationships
         public IList<Activity> Activities { get; set; }
         public IList<ServiceReview> ServiceReviews { get; set; }
+        public IList<Report> Reports { get; set; }
         public int AgencyId { get; set; }
         public Agency Agency { get; set; }
     }

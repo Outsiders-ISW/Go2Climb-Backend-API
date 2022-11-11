@@ -2,6 +2,7 @@ using AutoMapper;
 using Go2Climb.API.Agencies.Domain.Models;
 using Go2Climb.API.Domain.Models;
 using Go2Climb.API.Extensions;
+using Go2Climb.API.Reports.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
@@ -14,6 +15,7 @@ namespace Go2Climb.API.Persistence.Contexts
         public DbSet<Service> Services { get; set; }
         public DbSet<AgencyReview> AgencyReviews { get; set; }
         public DbSet<ServiceReview> ServiceReviews { get; set; }
+        public DbSet<Report> Reports { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<HiredService> HideServices { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
@@ -55,6 +57,10 @@ namespace Go2Climb.API.Persistence.Contexts
                 .WithOne(p => p.Customer)
                 .HasForeignKey(p => p.CustomerId);
             builder.Entity<Customer>()
+                .HasMany(p => p.Reports)
+                .WithOne(p => p.Customer)
+                .HasForeignKey(p => p.CustomerId);
+            builder.Entity<Customer>()
                 .HasMany(p => p.HideServices)
                 .WithOne(p => p.Customer)
                 .HasForeignKey(p => p.CustomerId);
@@ -82,6 +88,18 @@ namespace Go2Climb.API.Persistence.Contexts
 
             //Relationships
             //does not need relationships
+            
+            
+            //Constrains
+            builder.Entity<Report>().ToTable("Reports");
+            builder.Entity<Report>().HasKey(p => p.Id);
+            builder.Entity<Report>().Property(p => p.Id).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Report>().Property(p => p.Date).IsRequired();
+            builder.Entity<Report>().Property(p => p.Comment).IsRequired().HasMaxLength(200);
+
+            //Relationships
+            //does not need relationships
+            
 
             //Agency Entity
             builder.Entity<Agency>().ToTable("Agencies");
@@ -133,6 +151,10 @@ namespace Go2Climb.API.Persistence.Contexts
                 .HasForeignKey(p => p.ServiceId);
             builder.Entity<Service>()
                 .HasMany(p => p.ServiceReviews)
+                .WithOne(p => p.Service)
+                .HasForeignKey(p => p.ServiceId);
+            builder.Entity<Service>()
+                .HasMany(p => p.Reports)
                 .WithOne(p => p.Service)
                 .HasForeignKey(p => p.ServiceId);
 

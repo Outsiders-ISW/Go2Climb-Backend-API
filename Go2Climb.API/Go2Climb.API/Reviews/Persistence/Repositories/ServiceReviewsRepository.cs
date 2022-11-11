@@ -22,7 +22,8 @@ namespace Go2Climb.API.Persistence.Repositories
 
         public async Task<IEnumerable<ServiceReview>> ListByServiceId(int serviceId)
         {
-            return await _context.ServiceReviews.Where(p => p.ServiceId == serviceId).Include(p => p.Customer).ToListAsync();        }
+            return await _context.ServiceReviews.Where(p => p.ServiceId == serviceId).Include(p => p.Customer).ToListAsync();
+        }
 
         public async Task<IEnumerable<ServiceReview>> ListByCustomerId(int customerId)
         {

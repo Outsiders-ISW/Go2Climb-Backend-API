@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
+using Go2Climb.API.Reports.Domain.Models;
 
 namespace Go2Climb.API.Domain.Models
 {
@@ -15,6 +16,7 @@ namespace Go2Climb.API.Domain.Models
         public string Photo { get; set; }
         public IList<AgencyReview> AgencyReviews { get; set; } = new List<AgencyReview>();
         public IList<ServiceReview> ServiceReviews { get; set; } = new List<ServiceReview>();
+        public IList<Report> Reports { get; set; } = new List<Report>();
         public IList<HiredService> HideServices { get; set; } = new List<HiredService>();
     }
 }

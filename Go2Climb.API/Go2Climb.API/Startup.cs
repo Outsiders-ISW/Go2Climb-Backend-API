@@ -6,6 +6,10 @@ using Go2Climb.API.Domain.Repositories;
 using Go2Climb.API.Domain.Services;
 using Go2Climb.API.Persistence.Contexts;
 using Go2Climb.API.Persistence.Repositories;
+using Go2Climb.API.Reports.Domain.Repositories;
+using Go2Climb.API.Reports.Domain.Services;
+using Go2Climb.API.Reports.Persistence;
+using Go2Climb.API.Reports.Services;
 using Go2Climb.API.Security.Authorization.Handlers.Implementations;
 using Go2Climb.API.Security.Authorization.Handlers.Interfaces;
 using Go2Climb.API.Security.Authorization.Middleware;
@@ -65,6 +69,9 @@ namespace Go2Climb.API
             
             services.AddScoped<IServiceReviewRepository, ServiceReviewsRepository>();
             services.AddScoped<IServiceReviewService, ServiceReviewService>();
+            
+            services.AddScoped<IReportRepository, ReportRepository>();
+            services.AddScoped<IReportService, ReportService>();
             
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<ICustomerService, CustomerService>();
