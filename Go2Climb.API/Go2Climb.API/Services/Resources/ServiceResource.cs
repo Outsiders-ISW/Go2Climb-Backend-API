@@ -16,5 +16,6 @@ namespace Go2Climb.API.Services.Resources
         public string Video { get; set; }
         public string Description { get; set; }
         public bool IsOffer { get; set; }
+        public string HealthInsurance { get; set; }
     }
 }

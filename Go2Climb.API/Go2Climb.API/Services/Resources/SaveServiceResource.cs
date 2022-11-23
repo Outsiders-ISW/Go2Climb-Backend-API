@@ -33,5 +33,7 @@ namespace Go2Climb.API.Resources
         
         [Required]
         public int AgencyId { get; set; }
+        
+        public string HealthInsurance { get; set; }
     }
 }

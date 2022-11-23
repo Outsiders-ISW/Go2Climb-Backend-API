@@ -24,5 +24,6 @@ namespace Go2Climb.API.Domain.Models
         public IList<Report> Reports { get; set; }
         public int AgencyId { get; set; }
         public Agency Agency { get; set; }
+        public string HealthInsurance { get; set; }
     }
 }
